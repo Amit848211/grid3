@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(16,6.25%);
+    grid-template-rows: repeat(6,6rem);
+    height: 36rem;
+    border: 1px solid white;
+    background-color: black;
+    border-bottom: 10px solid black;
+} 
+img{
+    width: 100%;
+    height: 100%;
+    padding: 0.8px;
+}
+.item{
+    margin: 2px;
+    padding: 2px;
+    background-color: white;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item.first{
+    grid-row: 1/1;
+    grid-column: 1/ span 16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item.first .nav{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 200;
+}
+.nav button{
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    width: 70px;
+    height: 25px;
+}
+.nav img{
+    height: 70px;
+}
+
+.item.second{
+grid-column: 1/4;
+grid-row: 2/3;
+}
+
+.item.third{
+    grid-column: 4/9;
+    grid-row: 2/3;
+}
+
+.item.fourth{
+    grid-column: 9/12;
+grid-row: 2/5;
+}
+
+.item.fifth{
+    grid-column: 12/17;
+grid-row: 2/5;
+}
+
+.item.sixth{
+    grid-column: 1/6;
+grid-row: 3/5;
+}
+
+.item.seventh{
+    grid-column: 6/9;
+grid-row: 3/5;
+}
+
+.item.eighth{
+    grid-column: 1/7;
+grid-row: 5/7;
+}
+
+.item.nineth{
+    grid-column: 7/13;
+grid-row: 5/7;
+}
+
+.item.tenth{
+    grid-column: 13/17;
+grid-row: 5/7;
+}
